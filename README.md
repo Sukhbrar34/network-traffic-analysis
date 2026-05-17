@@ -14,7 +14,7 @@ By analysing raw data packets, this project simulates the fundamental monitoring
 
 ---
 
-## 🔍 Key Findings & Analysis
+## Key Findings & Analysis
 
 ### 1. Plain-Text Metadata Leakage via DNS
 By applying the `dns` display filter, I isolated the domain name requests sent by my computer. 
@@ -36,7 +36,7 @@ Using the specialized filter `tcp.flags.syn == 1`, I isolated the initialization
 
 ---
 
-## 🛡️ Recommended Security Mitigations
+## Recommended Security Mitigations
 
 1. **Enable DNS over HTTPS (DoH):** Encrypting outbound DNS queries prevents local network sniffers from reading the website domains being resolved by the endpoint.
 2. **Implement Network Segmentation:** Isolate local IoT, media servers, and UPnP devices onto an isolated guest network or VLAN to prevent lateral visibility from critical student or corporate workstations.
