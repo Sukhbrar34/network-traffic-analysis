@@ -43,22 +43,5 @@ Using the specialized filter `tcp.flags.syn == 1`, I isolated the initialization
 3. **Utilise a Virtual Private Network (VPN):** Encapsulating local link traffic ensures that plain-text local protocols remain completely hidden from other participants on a shared or untrusted network interface.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 🎯 Conclusion
+## Conclusion
 This project demonstrates that standard network operations leave significant footprints by default. While payload data is largely protected by modern web encryption, metadata (DNS) and local discovery protocols (UPnP) remain exposed. Securing a modern environment requires extending encryption across every layer of the network architecture.
