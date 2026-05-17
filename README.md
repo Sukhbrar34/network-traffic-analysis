@@ -40,9 +40,25 @@ Using the specialized filter `tcp.flags.syn == 1`, I isolated the initialization
 
 1. **Enable DNS over HTTPS (DoH):** Encrypting outbound DNS queries prevents local network sniffers from reading the website domains being resolved by the endpoint.
 2. **Implement Network Segmentation:** Isolate local IoT, media servers, and UPnP devices onto an isolated guest network or VLAN to prevent lateral visibility from critical student or corporate workstations.
-3. **Utilize a Virtual Private Network (VPN):** Encapsulating local link traffic ensures that plain-text local protocols remain completely hidden from other participants on a shared or untrusted network interface.
+3. **Utilise a Virtual Private Network (VPN):** Encapsulating local link traffic ensures that plain-text local protocols remain completely hidden from other participants on a shared or untrusted network interface.
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🎯 Conclusion
 This project demonstrates that standard network operations leave significant footprints by default. While payload data is largely protected by modern web encryption, metadata (DNS) and local discovery protocols (UPnP) remain exposed. Securing a modern environment requires extending encryption across every layer of the network architecture.
